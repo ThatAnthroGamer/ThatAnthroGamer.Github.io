@@ -25,14 +25,16 @@ body {
 	background-repeat: no-repeat;
 }
 @keyframes link{
-	0% {color: black;}
-	80% {color: gray;}
-	100% {color: black;}
+	0% {color: gray;}
+	50% {color: white;}
+	100% {color: gray;}
 }
 div.container {
 	margin: auto;
 }
 div.banner {
+	display:block;
+	text-align:center;
 	top: 0;
 	position: sticky;
 	padding: 4px;
@@ -50,40 +52,16 @@ a.navlink:link {
 	animation-name: link;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
-	color: black;
-	cursor: default;
+	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
 }
-a.navlink:hover {
-	animation-name: none;
-	background-color: red;
-	color: white;
-}
 a.navlink:visited {
-	color: white;
-}
-.active {
-	color: white;
-	text-shadow: 0px 0px 3px skyblue, 0px 0px 5px white;
-	padding: 7px 4px;
+	color: skyblue;
 }
 p {
-	margin: 12px 0px 0px 0px;
-}
-.column {
-	float: left;
-	padding: 0px 5px;
-}
-.column .split {
-	display: inline-block;
-	width: 50%;
-}
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+margin: 12px 0px 0px 0px
 }
 div.genericbox {
 	max-width: 1024px;
@@ -100,9 +78,7 @@ div.genericbox {
 	transform: translate(-50%, -50%);
 }
 .hcentertext {
-	margin: 0;
-	display: block;
-	transform: translateY(25%);
+	text-align:center;
 }
 footer {
 	bottom: 0;
@@ -120,7 +96,4 @@ footer {
 .rounded {
 	border-radius: 10px;
 	padding: 11px;
-}
-body#test {
-	content: "thatanthrogamer.github.io";
 }
